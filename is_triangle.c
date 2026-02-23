@@ -6,10 +6,13 @@ int main(){
     if ((a+c)>d || (c+d)>a || (a+d)>c){
         printf("Yes it can form a triangle\n");
     }
-    if (a==c==d){
+    else{
+        printf("It will not form a triangle");
+    }
+    if (a==c && c == d){
         printf("it is a equilateral triangle");
     }
-    else if (a!=d!=c){
+    else if (a!=c && c!=d){
         printf("it is a scalar triangle");
     }
     else {
@@ -17,3 +20,5 @@ int main(){
     }
     return 0;
 }
+
+
